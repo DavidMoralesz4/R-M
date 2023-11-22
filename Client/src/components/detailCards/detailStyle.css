@@ -1,0 +1,11 @@
+.container-detail {
+    position: absolute;
+    top: 94px;
+    width: 100%;
+    background-image: linear-gradient(
+    0deg,
+    rgba(26, 25, 25, 0.664),
+    rgba(37, 36, 36, 0.74)
+  );
+
+}

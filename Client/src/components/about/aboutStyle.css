@@ -1,0 +1,39 @@
+.image-by {
+    /* width: auto; */
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-about {
+    position: absolute;
+    top: 94px;
+    width: 100%;
+    background-image: linear-gradient(
+    0deg,
+    rgba(26, 25, 25, 0.664),
+    rgba(37, 36, 36, 0.74)
+  );
+}
+
+p {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(174, 238, 233);
+}
+
+h1 {
+    color: rgb(174, 238, 233);
+}
+
+h2 {
+    color: rgb(57, 240, 209);
+}

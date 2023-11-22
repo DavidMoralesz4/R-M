@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(
+    0deg,
+    rgba(71, 71, 71, 0.664),
+    rgba(71, 71, 71, 0.664)
+  ),url("./src/images/R.png");
+  /* background-repeat:no-repeat; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 84px;
+  padding: 5px 1%;
+  background-color: rgba(165, 163, 163, 0.425);
+  backdrop-filter: blur(6px);
+}
+
+.Nav {
+  /* margin-top: 29px; */
+  margin: 15px 15px;
+  border-radius: 10px;
+
+}
+
+.logo {
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+  transition: all 0.6s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+li {
+  color: white;
+}
+
+.buttonWithe{
+  background-color: rgba(240, 248, 255, 0);
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menuOcult{
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  /* Estilos específicos para pantallas móviles */
+  .Home{
+    display: none;
+  }
+
+  .Searchbar{
+    display: none;
+  }
+
+  .LogOut{
+    display: none;
+  }
+
+  .About{
+    display: none;
+  }
+
+  .container-login{
+    display: none;
+  }
+
+  .menuOcult{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 27px;
+    cursor: pointer;
+    transition: all 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 65px;
+  }
+
+  .menuOcult:hover{
+    transform: scale(1.1);
+  }
+  /* Puedes agregar más estilos aquí según tus necesidades */
+}

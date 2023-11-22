@@ -1,0 +1,27 @@
+@keyframes tracking-in-expand{0%{letter-spacing:-.2em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+.active {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 6px 4px #0000008c;
+    font-size: 18px;
+    cursor: pointer;
+}
+  
+  .disable {
+    color: rgb(216, 216, 216);
+}
+.active:hover {
+    /* height: 80px;
+    width: 80px; */
+    
+    color: rgb(81, 166, 206);
+    transition: all 0.4s;
+  }
+  
+  .active:hover {
+    transform: scale(1.2);
+  }
+
+  

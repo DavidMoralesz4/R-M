@@ -1,0 +1,125 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+}
+
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    width: 500px;
+    height: 500px; 
+    border-radius: 20px;
+    box-shadow: 16px 20px 20px #0000008c;
+}
+
+.container-login {
+    
+    /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+}
+
+label {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 280px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+input {
+    width: 70%;
+    height: 7px;
+    background: rgba(240, 248, 255, 0.068);
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color: #fff;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+i {
+    position: relative;
+    left: 176px;
+    top: -8%;
+    font-size: 20px;
+}
+
+.email-input {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 299px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.h1-login{
+    font-size: 60px;
+    color: #fff;
+    /* text-decoration:overline;/ */
+    position: absolute;
+    top: 10px;
+}
+
+.button-sub {
+    position: absolute;
+    top: 370px;
+    padding: 15px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(78, 124, 184);
+    width: 80%;
+    height: 45px;
+    /* cursor: pointer; */
+    border: 1px solid #2a69c083;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* outline: none;*/
+    /* background: #7e7e7e83; */
+    /* cursor: pointer; */
+}
+
+/* .button-sub:hover {
+    color:  #ecececc0;
+} */
+
+.error {
+    position: relative;
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -16px;
+}   
