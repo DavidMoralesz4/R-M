@@ -17,8 +17,8 @@ import Favorites from './components/favorites/Favorites';
 function App() {
    const navigate = useNavigate();
    const [ access, setAccess ] = useState(false);
-   const email = 'user-123peperoni@gmail.com';
-   const password = 'userPassword_1233'
+   // const email = 'user-123peperoni@gmail.com';
+   // const password = 'userPassword_1233'
    
    const [characters, setCharacters] = useState([])
    const location = useLocation();
@@ -42,17 +42,14 @@ function App() {
      )
    }
 
-   const loginUser = (userData) => {
-      if (userData.password === password && userData.email === email) {
-         // Inicio de sesión exitoso
-         console.log('Inicio de sesión exitoso');
-         setAccess(true);
-         navigate('/');
-       } else {
-         // Inicio de sesión fallido
-         console.log('Inicio de sesión fallido');
-         this.setState({ loginError: true });
-       }
+   const login = (userData) => {
+      const { email, password } = userData;
+      const URL = 'http://localhost:3001/rickandmorty/login/';
+      axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
+         const { access } = data;
+         setAccess(data);
+         access && navigate('/home');
+      });
    }
 
    useEffect(() => {
@@ -73,7 +70,7 @@ function App() {
             
             <Route path='/home' element={<Cards characters={characters} onClose={onClose}/>}/>
             <Route path='/about' element={<About />}/>
-            <Route path='/login' element={<Form loginUser={loginUser}/>}/>
+            <Route path='/login' element={<Form loginUser={login}/>}/>
             <Route path='/favorites' element={<Favorites/>} />
             <Route path='/detail/:id' element={<Detail/>}/>
 

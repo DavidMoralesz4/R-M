@@ -15,7 +15,7 @@ const Card = ({id, onClose, name, status, species, gender, origin, image}) => {
          dispatch(removeFav(id))
       } else {
          setIsFav(true);
-         dispatch(addFav({id, name, image, name, status, species, gender, origin}));
+         dispatch(addFav({id, name, image, status, species, gender, origin}));
       }
    }
 
